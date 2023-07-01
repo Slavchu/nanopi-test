@@ -12,12 +12,12 @@
 
 int main(){
     wiringPiSetup();
+    wiringPiSetupGpio();
     pinMode(7, OUTPUT);
     pinMode(0, INPUT);
-    bool statement = false;
     while(1){
-        analogWrite( 7, analogRead(0));
-        std::cout <<(analogRead(0));
+        digitalWrite( 7, 1);
+        std::cout <<(analogRead(0)) << std::endl;
     }
 }
 
