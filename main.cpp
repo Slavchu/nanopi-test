@@ -6,6 +6,7 @@ int main(){
     bool statement = false;
     while(1){
         digitalWrite(7, statement = !statement);
+        std::cout << statement << std::endl;
         sleep(1);
     }
 }
