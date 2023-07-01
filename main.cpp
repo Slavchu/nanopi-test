@@ -15,9 +15,12 @@ int main(){
     wiringPiSetupGpio();
     pinMode(0, OUTPUT);
     //pinMode(0, INPUT);
-    digitalWrite( 0, 1);
 
     while(1){
+        digitalWrite( 0, 1);
+
+        sleep(1);
+        digitalWrite( 0, 0);
         sleep(1);
     //    std::cout <<(analogRead(0)) << std::endl;
     }
