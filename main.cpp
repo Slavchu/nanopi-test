@@ -8,5 +8,8 @@ int main(){
         digitalWrite(7, statement = !statement);
         std::cout << statement << std::endl;
         sleep(1);
+        digitalWrite(7, statement = !statement);
+        sleep(0.1);
+        digitalWrite(7, statement = !statement);
     }
 }
