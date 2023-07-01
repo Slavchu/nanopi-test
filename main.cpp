@@ -9,7 +9,7 @@ int main(){
         std::cout << statement << std::endl;
         sleep(1);
         digitalWrite(7, statement = !statement);
-        sleep(0.1);
+        delayMicroseconds(500);
         digitalWrite(7, statement = !statement);
     }
 }
