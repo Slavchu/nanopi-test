@@ -14,7 +14,6 @@ int main(){
     wiringPiSetup();
     wiringPiSetupGpio();
     pinMode(0, OUTPUT);
-    pinMode(2, INPUT);
 
     while(1){
         digitalWrite( 0, 1);
