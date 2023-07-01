@@ -12,14 +12,14 @@
 
 int main(){
     wiringPiSetup();
-    wiringPiSetupGpio();
+
     pinMode(0, OUTPUT);
 
     while(1){
-        digitalWrite( 0, 1);
+        analogWrite( 0, 100);
 
         sleep(1);
-        digitalWrite( 0, 0);
+        analogWrite( 0, 0);
         sleep(1);
         std::cout <<(analogRead(2)) << std::endl;
     }
