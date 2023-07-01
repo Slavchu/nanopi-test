@@ -16,8 +16,8 @@ int main(){
     pinMode(0, INPUT);
     bool statement = false;
     while(1){
-        analogWrite(analogRead(0), 7);
-        
+        analogWrite( 7, analogRead(0));
+        std::cout <<(analogRead(0));
     }
 }
 
